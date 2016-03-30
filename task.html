@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        .delete-btn {
+            border: none;
+            background: inherit;
+            display: none;
+        }
+        
+        .tags, .hobby-tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 20px;
+            background-color: #87CDFF;
+            color: white;
+        }        
+        
+        .hobby-tag {
+            background-color: #FCCC82;
+        }
+        
+        .tags:hover {
+            background-color: red;
+        }
+        .tags:hover .delete-btn {
+            display: inline;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <label>关键词：<input type="text" id="keyword"></label>
-        <label for="content">内容</label>
-        <textarea name="" id="content" cols="30" rows="10"></textarea>
-        <button id="search-button">搜索</button>
+    <div id="tags">
+        <label>Tags:<input type="text"></label>
     </div>
-    <div id="canvas"></div>
+    <div id="hobby">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button>确认兴趣爱好</button>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
