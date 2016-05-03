@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task_21</title>
+	<script src="task_21.js"></script>
+	<style>
+		ul{
+			list-style: none;
+			overflow:hidden;
+		}
+		li{
+			background-color: blue;
+			float: left;
+			margin: 20px;
+			display: inline-block;
+		}
+		li:hover{
+			background-color: red;
+			cursor: pointer;
+		}
+		li:hover:before{
+			content: '点击删除';
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<span>Tag:</span><input type="text" id="text" autofocus><br/>
+		<ul id="tags"></ul>
+		<textarea name="" id="textarea" cols="30" rows="10"></textarea><br/>
+		<input type="button" id="btn" value="确认兴趣爱好">
+		<ul id="interests"></ul>
+	</form>
+</body>
+</html>
